@@ -32,9 +32,6 @@ const App = () => {
   // Keeps track of which color is currently selected
   const [nextBackground, selectNextBackground] = useState({ background: "" });
 
-  // This function will be passed to each Selection box
-  // It applies the selected color (stored in nextBackground)
-  // by calling the box's own state update function
   const applyColor = (updateSelectionStyle) => {
     updateSelectionStyle(nextBackground);
   };

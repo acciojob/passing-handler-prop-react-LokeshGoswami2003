@@ -8,6 +8,7 @@ const ColourSelector = (props) => {
     <button
       className={classname}
       onClick={() => selectNextBackground({ background })}
+      data-testid={label.toLowerCase().replace(" ", "-")}
     >
       {label}
     </button>
